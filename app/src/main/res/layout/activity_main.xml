@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="12dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/circle_background"
+        android:src="@drawable/ic_person"
+        android:contentDescription="Photo" />
+
+    <Button
+        android:id="@+id/btnChooseImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choisir une photo"
+        android:backgroundTint="@color/teal_700"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/nom"
+        android:hint="Nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_rounded"
+        android:padding="12dp"
+        android:minHeight="50dp"/>
+
+    <EditText
+        android:id="@+id/prenom"
+        android:hint="Prenom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_rounded"
+        android:padding="12dp"
+        android:minHeight="50dp"/>
+
+    <EditText
+        android:id="@+id/dateNaissance"
+        android:hint="Date de Naissance"
+        android:focusable="false"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_rounded"
+        android:padding="12dp"
+        android:minHeight="50dp"/>
+
+    <Button
+        android:id="@+id/btnAjouter"
+        android:text="Valider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_700"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="12dp"/>
+
+    <EditText
+        android:id="@+id/idEtudiant"
+        android:hint="ID Etudiant"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_rounded"
+        android:padding="12dp"
+        android:minHeight="50dp"/>
+
+    <Button
+        android:id="@+id/btnChercher"
+        android:text="Chercher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_700"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnSupprimer"
+        android:text="Supprimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnList"
+        android:text="Lister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_700"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
